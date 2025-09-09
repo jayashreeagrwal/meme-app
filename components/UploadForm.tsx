@@ -38,12 +38,14 @@ export function UploadForm() {
 
       toast.success("Meme uploaded successfully!");
       router.push("/"); // ✅ replaces navigate('/')
-    } catch (error: any) {
-      console.error("Upload error:", error);
-      toast.error("Failed to upload meme");
-    } finally {
-      setLoading(false);
-    }
+    } catch (error: unknown) {
+  console.error("Upload error:", error);
+  if (error instanceof Error) {
+    toast.error(error.message || "Failed to upload meme");
+  } else {
+    toast.error("Failed to upload meme");
+  }
+}
   };
 
   if (!user) {
