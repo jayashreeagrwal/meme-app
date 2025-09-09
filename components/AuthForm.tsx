@@ -31,10 +31,12 @@ export function AuthForm() {
         toast.success("Account created! Please check your email to verify.");
       }
       router.push("/"); 
-    } catch (error: any) {
-      toast.error(error.message || "Authentication failed");
-    } finally {
-      setLoading(false);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        toast.error(error.message);
+      } else {
+        toast.error("Authentication failed");
+      }
     }
   };
 
