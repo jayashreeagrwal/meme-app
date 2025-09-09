@@ -59,8 +59,8 @@ This project uses [`next/font`](https://www.google.com/search?q=%5Bhttps://nextj
 1. The Add new user feature does not work due to some Supabase Issue, instead of any code issue... working on fixing that
 <img width="1178" height="730" alt="image" src="https://github.com/user-attachments/assets/7259541a-0770-4af0-b088-1fab23d64000" />
 
-2. It was made sure that the use of AI was only limited to debugging purposes for this peoject however the frontend was cleaned us (upscaled and aligned) using AI tools.
+2. It was made sure that the use of AI was only limited to debugging purposes for this peoject however the frontend was cleaned (upscaled and aligned) using AI tools.
 
 3. For any other features you may wish for to be included, drop by at jayashreeagrwal [at] gmail [dot] com
 
-## A demo run video: 
+## A demo run video: https://drive.google.com/drive/folders/1_4xUjzUeGwhBaVMrkYntR_EEz0M1Z_nC?usp=sharing
